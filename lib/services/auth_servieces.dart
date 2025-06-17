@@ -2,15 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
+import 'package:task/constance/api_constance.dart';
 import 'package:task/models/user_model.dart';
 import 'package:task/models/user_profile_model.dart';
 
 class AuthService {
   static const String _loginUrl =
-      'https://seclobbackendapi.seclob.com/v1/cPartner-no/auth/login';
+      '$baseUrl/cPartner-no/auth/login';
 
   static const String _profileUrl =
-      'https://seclobbackendapi.seclob.com/v1/cPartner/user/details';
+      '$baseUrl/cPartner/user/details';
 
     final FlutterSecureStorage _storage = const FlutterSecureStorage();
 
