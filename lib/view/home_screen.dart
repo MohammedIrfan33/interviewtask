@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'package:provider/provider.dart';
 import 'package:task/constance/color_constant.dart';
 import 'package:task/view_model/home_view_model.dart';
 import 'package:task/widgets/carousel_banner.dart';
 import 'package:task/widgets/featured_card_tile.dart';
-import 'package:task/widgets/primary_button.dart';
 
 class HomeScreen extends StatelessWidget {
    HomeScreen({super.key});

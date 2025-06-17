@@ -7,11 +7,9 @@ import 'package:lucide_icons/lucide_icons.dart';
 import 'package:provider/provider.dart';
 import 'package:task/constance/color_constant.dart';
 import 'package:task/utils/validator.dart';
-import 'package:task/view/home_screen.dart';
 import 'package:task/view/root_screen.dart';
 import 'package:task/view_model/auth_view_model.dart';
 import 'package:task/widgets/custom_text_field.dart';
-import 'package:task/widgets/primary_button.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
