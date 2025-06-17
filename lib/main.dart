@@ -29,7 +29,8 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       child: MaterialApp(
-        title: 'Resellr',
+        title: 'Reseller',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(fontFamily: 'sfpro'),
 
         home: SplashRedirectorScreen(),

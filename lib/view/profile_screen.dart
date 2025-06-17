@@ -51,7 +51,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 25.h),
-                      margin: EdgeInsets.symmetric(vertical: 45.h),
+                      margin: EdgeInsets.symmetric(vertical: 25.h),
                       decoration: BoxDecoration(
                         color: kSecondaryColor,
                         borderRadius: BorderRadius.circular(12.r),
@@ -96,7 +96,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     fontWeight: FontWeight.w700,
                   )),
             
-                  SizedBox(height: 20.h,),
+                  SizedBox(height: 15.h,),
             
                      OptionTile(
                   icon: 'asset/images/svg/person.svg',
@@ -127,7 +127,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   icon: 'asset/images/svg/bank.svg',
                   title: 'Bank Account',
                   onTap: () {
-                    // Navigate to profile edit screen or something else
                   },
                 ),
             
@@ -136,7 +135,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   icon: 'asset/images/svg/hs.svg',
                   title: 'Help & Support',
                   onTap: () {
-                    // Navigate to profile edit screen or something else
                   },
                 ),
             
@@ -144,7 +142,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   icon: 'asset/images/svg/cp.svg',
                   title: 'Consumer  policies',
                   onTap: () {
-                    // Navigate to profile edit screen or something else
                   },
                 ),
             
@@ -180,7 +177,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
 
-            SizedBox(height: 80,)
+            SizedBox(height: 60,)
             
                 
                   ],
