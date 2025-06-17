@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class OptionTile extends StatelessWidget {
-  final IconData icon;
+  final String icon;
   final String title;
   final VoidCallback onTap;
 
@@ -22,7 +23,7 @@ class OptionTile extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 16.h),
         child: Row(
           children: [
-            Icon(icon, size: 30.sp),
+            SvgPicture.asset(icon,height: 24.h, width: 24.h,),
             SizedBox(width: 12.w),
             Expanded(
               child: Text(
@@ -33,7 +34,9 @@ class OptionTile extends StatelessWidget {
                 ),
               ),
             ),
-            Icon(Icons.chevron_right, size: 30.sp),
+            SvgPicture.asset('asset/images/svg/arrow.svg',height: 15, width: 6,),
+
+            
           ],
         ),
       ),

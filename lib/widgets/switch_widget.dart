@@ -2,10 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:task/constance/color_constant.dart';
 
 class SwitchTile extends StatelessWidget {
-  final IconData icon;
+  final String icon;
   final String title;
   final bool value;
   final ValueChanged<bool> onChanged;
@@ -22,7 +23,8 @@ class SwitchTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Row(
         children: [
-          Icon(icon, size: 30.sp),
+              SvgPicture.asset(icon,height: 24.h, width: 24.h,color: Colors.black,)
+,
           SizedBox(width: 12.w),
           Expanded(
             child: Text(

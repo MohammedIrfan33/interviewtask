@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:provider/provider.dart';
 import 'package:task/constance/color_constant.dart';
@@ -98,7 +99,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   SizedBox(height: 20.h,),
             
                      OptionTile(
-                  icon: LucideIcons.user,
+                  icon: 'asset/images/svg/person.svg',
                   title: 'Profile',
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileDetailsScreen(),));
@@ -107,7 +108,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             
             
                 SwitchTile(
-                  icon: Icons.contrast,
+                  icon: 'asset/images/svg/mode.svg',
                   title: 'Dark Mode',
                   value: false,
                   onChanged: (value) {
@@ -115,7 +116,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   },
                 ),
                 SwitchTile(
-                  icon: LucideIcons.bell,
+                  icon: 'asset/images/svg/notify.svg',
                   title: 'Notifications',
                   value: false,
                   onChanged: (value) {
@@ -123,7 +124,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   },
                 ),
                 OptionTile(
-                  icon: Icons.account_balance,
+                  icon: 'asset/images/svg/bank.svg',
                   title: 'Bank Account',
                   onTap: () {
                     // Navigate to profile edit screen or something else
@@ -132,7 +133,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             
             
                 OptionTile(
-                  icon: Icons.support_agent,
+                  icon: 'asset/images/svg/hs.svg',
                   title: 'Help & Support',
                   onTap: () {
                     // Navigate to profile edit screen or something else
@@ -140,7 +141,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
             
                 OptionTile(
-                  icon: LucideIcons.shoppingBag,
+                  icon: 'asset/images/svg/cp.svg',
                   title: 'Consumer  policies',
                   onTap: () {
                     // Navigate to profile edit screen or something else
@@ -164,11 +165,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 borderRadius: BorderRadius.circular(10.r),
                 child: Row(
                   children: [
-                    Icon(
-            Icons.logout,
-            color: Colors.red,
-            size: 30.sp,
-                    ),
+                    SvgPicture.asset('asset/images/svg/logout.svg',height: 24.h,width: 24.h,),
                     SizedBox(width: 12.w),
                     Text(
             'Logout',
@@ -206,9 +203,9 @@ class LogoutConfirmationSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(
-            'asset/images/Featured icon.png', // Replace with your image path
-            height: 100.h,
+          SvgPicture.asset(
+            'asset/images/svg/ficon.svg', // Replace with your image path
+            height: 48.h,
           ),
           SizedBox(height: 16.h),
           Text(
